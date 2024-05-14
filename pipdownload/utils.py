@@ -288,7 +288,7 @@ def download(url, dest_dir, quiet=False):
             os.unlink(download_file_path)
 
     try:
-        response = download_with_retry(file_url):
+        response = download_with_retry(file_url)
         chunk_size = 1024
         size = 0
         if response.status_code == 200:
